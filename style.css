@@ -7,20 +7,22 @@
     text-decoration: none;
     list-style-type: none;
     font-family: "Edu VIC WA NT Beginner", cursive;
-    color: #FFDFD6;  
+    color: var(--white_color);  
 }
-
+.fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp-solid, .fa-solid, .fab, .far, .fas{
+    color: var(--main_color);
+}
 :root{
-    --main_color: #E3A5C7;
-    --p_color: #fff;
-    --bg_color: #674188;
-    --white_color: #FFDFD6;
-    --black_color: #694F8E;
+    --main_color: #C299F7;
+    --p_color: #F5D6E0;
+    --bg_color: #FFF0F5 ;
+    --white_color: #FFFFFF;
+    --black_color: #333333;
     --border-color: rgba(255,255,255,0.1);
 }
 
 body{
-    background: #694F8E;
+    background: var(--black_color);
 } 
 
 .container{
@@ -145,6 +147,10 @@ p{
     font-size: 30px;
 }
 
+/*nav scrolling*/
+#about,#serv,#proj,#contact{
+    scroll-margin-top: 80px;
+}
 
 /*start headr*/
 header{
@@ -168,7 +174,7 @@ header nav{
 }
 
 header nav .logo img{
-    width: 100px;
+    width: 70px;
 }
 
 header nav .links{
@@ -471,9 +477,9 @@ header nav .icons a:hover{
     padding: 20px;
     outline: none;
     background-color: var(--bg_color);
-    color: white;
+    color: var(--black_color);
     margin-bottom: 30px;
-    border: 1px solid var(--border-color);
+    border: 3px solid var(--border-color);
     transition: 0.3s;
 }
 .contact form .inputs_form input:focus,
@@ -500,3 +506,286 @@ header nav .icons a:hover{
     scale: 1.1;
 }
 /*End contacts*/
+
+/*start responsive*/
+.close_menu,
+header .links .logo,
+.icon_menu{
+    display: none;
+}
+
+@media (max-width: 1250px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px){
+    header nav .links{
+        position: fixed;
+        top: 0;
+        flex-direction: column;
+        width: 400px;
+        background-color: var(--black_color);
+        left: -400px;
+        padding: 50px 0;
+        height: 100%;
+        border-right: 1px solid var(--border-color);
+        text-align: center;
+        transition: 0.3s ease-in-out;
+    }
+    header nav .links.active{
+        left: 0;
+    }
+    .close_menu{
+        display: block;
+        font-size: 28px;
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+    header .links .logo{
+        display: block;
+    }
+    .icon_menu{
+        display: block;
+        font-size: 28px;
+    }
+
+    /*responsive home*/
+    .hero .div_text h4{
+        font-size: 25px;
+    }
+    .hero .div_text h1{
+        font-size: 55px;
+    }
+    .hero .div_text h2{
+        font-size: 55px;
+    }
+    .hero .div_text p{
+        font-size: 16px;
+        margin: 30px auto;
+    }
+    .hero .btn{
+        font-size: 18px;
+        padding: 16px 40px;
+    }
+    .hero .container,
+    .about .container{
+        flex-direction: column;
+    }
+    .hero .div_text{
+        width: 100%;
+        margin-top: 50px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .hero .btns{
+        justify-content: center;
+    }
+    .hero{
+        height: auto;
+    }
+
+
+    .about .div_text{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .services .boxs .box{
+        width: 47%;
+        margin-bottom: 30px;
+    }
+
+    .projects .project_box .text .h3 a{
+        font-size: 25px;
+    }
+    .projects .project_box .text .h4{
+        font-size: 16px;
+    }
+    .projects .project_box .text p{
+        font-size: 14px;
+    }
+    .projects .project_box .text{
+        width: calc(50% - 50px);
+        margin-left: 50px;
+    }
+
+    .contact .container{
+        flex-direction: column;
+    }
+    .contact .social_contact{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .contact .social_contact .links{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .contact .social_contact .links a{
+        width: 30%;
+        font-size: 18px;
+    }
+    .contact .social_contact .links a i{
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+    }
+    .contact form{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .contact .btn{
+        font-size: 16px;
+        padding: 13px 28px;
+    }
+}
+
+@media (max-width: 500px){
+    .bg-lines span:nth-child(1){
+        left: 20%;
+    }
+    .bg-lines span:nth-child(2){
+        left: 30%;
+    }
+    .bg-lines span:nth-child(3){
+        left: 40%;
+    }
+    .bg-lines span:nth-child(4){
+        left: 50%;
+    }
+    .bg-lines span:nth-child(5){
+        left: 60%;
+    }
+    .bg-lines span:nth-child(6){
+        left: 70%;
+    }
+    .bg-lines span:nth-child(7){
+        left: 80%;
+    }
+    .bg-lines span:nth-child(8){
+        left: 90%;
+    }
+    .bg-lines span:nth-child(9){
+        left: 100%;
+    }
+    .btn{
+        padding: 12px 25px;
+        font-size: 14px;
+    }
+
+    
+    header nav .icons a{
+        font-size: 20px;
+    }
+    header nav .icons{
+        gap: 15px;
+        align-items: center;
+    }
+    header nav .logo img{
+        width: 52px;
+    }
+    header nav .links{
+        width: 100%;
+        left: -100%;
+    }
+    .icon_menu{
+        margin-left: 15px;
+    }
+
+
+    .hero .div_text h4{
+        font-size: 22px;
+    }
+    .hero .div_text h1{
+        font-size: 40px;
+    }
+    .hero .div_text h2{
+        font-size: 40px;
+    }
+    .hero .div_text p{
+        font-size: 14px;
+        margin: 25px auto;
+        width: 100%;
+    }
+    .hero .btn{
+        font-size: 16px;
+        padding: 14px 30px;
+    }
+    .hero .div_img{
+        width: 80%;
+    }
+
+
+
+    .about .div_text h2{
+        font-size: 30px;
+    }
+    .about .div_text h4{
+        font-size: 20px;
+    }
+    .about .div_text p{
+        font-size: 14px;
+    }
+    .about .div_text ul li{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .top_section h2{
+        font-size: 22px;
+    }
+    .services .boxs .box{
+        width: 100%;
+    }
+    .services .boxs .box i{
+        font-size: 55px;
+    }
+
+    .projects .project_box:nth-child(3), 
+    .project_box:nth-child(5),
+    .projects .project_box{
+        flex-direction: column;
+    }
+    .projects .project_box img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .projects .project_box .text{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .projects .project_box .text p{
+        margin: 20px 0 30px;
+    }
+    .projects .project_box .text h3 a{
+        font-size: 23px;
+    }
+
+    .contact .social_contact .links{
+        flex-direction: column;
+    }
+    .contact .social_contact .links a{
+        width: 100%;
+    }
+
+    .projects{
+        padding-bottom: 40px;
+    }
+    .contact{
+        padding-top: 0;
+    }
+    .contact .top_section{
+        margin-bottom: 60px;
+    }
+    .contact form{
+        width: 100%;
+    }
+    .contact form .inputs_form input{
+        width: 100%;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+
+    }
+}

@@ -24,23 +24,27 @@
     <header>
         <nav class="container">
             <a href="#" class="logo"><img src="bow.png" alt=""></a>
-            <div class="links">
-                <a class="active" href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+            <div class="links" id="links">
+                <span class="close_menu" onclick="open_close_menu()"><i class="fa-solid fa-xmark"></i></span>
+
+                <a href="" class="logo"><img src="bow.png" alt=""></a>
+                <a class="active" onclick="open_close_menu()" href="#home">Home</a>
+                <a href="#about" onclick="open_close_menu()">About</a>
+                <a href="#serv" onclick="open_close_menu()">Services</a>
+                <a href="#proj" onclick="open_close_menu()">Projects</a>
+                <a href="#contact" onclick="open_close_menu()">Contact</a>
             </div>
 
             <div class="icons">
-                <a href="http://"><i class="fa-brands fa-square-facebook" style="color: #e3a5c7;"></i></a>
-                <a href="http://"><i class="fa-brands fa-square-github" style="color: #e3a5c7;"></i></a>
-                <a href="http://"><i class="fa-brands fa-linkedin" style="color: #e3a5c7;"></i></a>
+                <a href="https://www.linkedin.com/company/facebook/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://github.com/AmnaZaher" target="_blank"><i class="fa-brands fa-square-github" ></i></a>
+                <a href="https://www.linkedin.com/in/amna-zaher-09956b230/" target="_blank"><i class="fa-brands fa-linkedin" ></i></a>
+                <span class="icon_menu" onclick="open_close_menu()"><i class="fa-solid fa-bars"></i></span>
             </div>
         </nav>
     </header>
 
-    <div class="hero">
+    <div class="hero" id="home">
         <div class="container">
             <div class="div_text">
                 <h4>Hello, I'm</h4>
@@ -49,8 +53,8 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum officia quia officiis quisquam ipsa veniam facere natus praesentium libero odio.</p>
 
                 <div class="btns">
-                    <a href="#" class="btn">Hire me</a>
-                    <a href="Resume-Amna-Zaher.pdf" download class="btn_no_bg">Download Resume</a>
+                    <a href="https://www.linkedin.com/in/amna-zaher-09956b230/" target="_blank" class="btn">Hire me</a>
+                    <a href="AmnaZaher.pdf" download class="btn_no_bg">Download Resume</a>
                 </div>
             </div>
 
@@ -62,7 +66,7 @@
         </div>
     </div>
 
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="div_text">
                 <h5>about me</h5>
@@ -71,14 +75,16 @@
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem quaerat veniam corrupti vel, maxime, placeat magnam aspernatur culpa dolore quisquam, consequuntur id omnis impedit! Veniam.</p>
                 <ul>
                     <li><i class="fa-solid fa-check" style="color: #e3a7cf;"></i>Web Developer</li>
-                    <li><i class="fa-solid fa-check" style="color: #e3a7cf;"></i>Web Developer</li>
+                    <li><i class="fa-solid fa-check" style="color: #e3a7cf;"></i>AI Developer</li>
+                    <li><i class="fa-solid fa-check" style="color: #e3a7cf;"></i>Video Editor</li>
+                    <li><i class="fa-solid fa-check" style="color: #e3a7cf;"></i>Photographer</li>
                 </ul>
-                <a href="Resume-Amna-Zaher.pdf" download class="btn">Download Resume</a>
+                <a href="AmnaZaher.pdf" download class="btn">Download Resume</a>
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="serv">
         <div class="container">
             <div class="top_section">
                 <h2>Our<span>Services</span></h2>
@@ -87,30 +93,27 @@
             <div class="boxs">
                 <div class="box">
                     <i class="fa-solid fa-pen-ruler"></i>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit modi eveniet quam voluptatem, incidunt officiis inventore atque aliquid ab ratione dolor reiciendis hic at accusamus veniam doloremque? Quidem, pariatur.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Precision</h3>
+                    <p> The quality of being exact, accurate, and careful in work or tasks, ensuring all details are attended to with minimal errors.</p>
                 </div>
 
                 <div class="box">
                     <i class="fa-solid fa-rocket"></i>
-                    <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit modi eveniet quam voluptatem, incidunt officiis inventore atque aliquid ab ratione dolor reiciendis hic at accusamus veniam doloremque? Quidem, pariatur.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <h3>Efficiency</h3>
+                    <p>The ability to accomplish tasks quickly and effectively with minimal wasted effort or resources, often resulting in high productivity.</p>
                 </div>
 
                 <div class="box">
                     <i class="fa-solid fa-code"></i>
                     <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero fugit modi eveniet quam voluptatem, incidunt officiis inventore atque aliquid ab ratione dolor reiciendis hic at accusamus veniam doloremque? Quidem, pariatur.</p>
-                    <a href="#" class="btn">Read More</a>
+                    <p>Creating the visual layout, user interface, and overall aesthetic of a website. It involves designing the structure, color scheme, typography, and graphics to ensure a user-friendly and appealing experience across devices and browsers. Web design also focuses on usability, navigation, and responsiveness.</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-    <section class="projects">
+    <section class="projects" id="proj">
         <div class="container">
             <div class="top_section">
                 <h2>Explore My Popular<span> Projects</span></h2>
@@ -171,23 +174,23 @@
             <div class="social_contact">
                 <h2>Follow Me</h2>
                 <div class="links">
-                    <a href="amnazizo70@gmail.com"><i class="fa-solid fa-envelope" style="color: #e3a5c7;"></i>Gmail</a>
-                    <a href="tel:+20"><i class="fa-solid fa-phone" style="color: #e3a5c7;"></i>Phone Number</a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-facebook" style="color: #e3a5c7;"></i>Facebook</a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-x-twitter" style="color: #e3a5c7;"></i>Twitter</a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-instagram" style="color: #e3a5c7;"></i>Instagram</a>
+                    <a href="mailto:amnazizo70@gmail.com"><i class="fa-solid fa-envelope" ></i>Gmail</a>
+                    <a href="tel:+20101245678"><i class="fa-solid fa-phone" ></i>Phone Number</a>
+                    <a href="https://www.linkedin.com/company/facebook/" target="_blank"><i class="fa-brands fa-facebook" ></i>Facebook</a>
+                    <a href="https://x.com/LinkedIn" target="_blank"><i class="fa-brands fa-x-twitter" ></i>Twitter</a>
+                    <a href="https://www.instagram.com/linkedin/" target="_blank"><i class="fa-brands fa-instagram" ></i>Instagram</a>
                 </div>
             </div>
 
-            <form action="">
+            <form method="post" action="https://api.sheetmonkey.io/form/oyUDFJdGipbjKBayuvenMz">
                 <div class="inputs_form">
-                    <input type="text" placeholder="Full Name">
-                    <input type="text" placeholder="Email">
-                    <input type="text" placeholder="Phone Number">
-                    <textarea name="" id="" rows="10" placeholder="Your message here..."></textarea>
+                    <input type="text" placeholder="Full Name" name="Name" required>
+                    <input type="email" placeholder="Email" name="Email" required>
+                    <input type="number" placeholder="Phone Number" name="Phone" required>
+                    <textarea name="Message" id="" rows="10" placeholder="Your message here..."></textarea>
                 </div>
 
-                <button class="btn">Send Message</button>
+                <button type="submit" class="btn">Send Message</button>
             </form>
         </div>
     </section>
